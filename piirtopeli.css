@@ -1,0 +1,79 @@
+button{
+  height: 50px;
+  width: 50px;
+  border: solid;
+  border-radius: 25px;
+}
+
+#varivalitsin{
+  height: 50px;
+  width: 50px;
+  border: solid;
+  margin-bottom: 10px;
+}
+
+.sininen{
+  background-color: blue;
+}
+
+.punainen{
+  background-color: red;
+}
+
+.keltainen{
+  background-color: yellow;
+}
+
+.arvonta{
+  background-image: linear-gradient(to bottom right, red, orange, yellow, green, blue, violet, red);
+}
+
+.sateenkaari{
+  background: url(pallot.jpg);
+  background-size: 50px 50px;
+}
+
+.kumi{
+  width: 50px;
+  height: 50px;
+}
+
+
+.slidecontainer {
+  width: 380px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: white;
+  outline: solid black;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  /*background: black;*/
+  background: url('paintikoni.png');
+  background-size: 24px 24px;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}

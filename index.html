@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Suvin Oma Paint</title>
+    <link rel="icon" href="paintikoni.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
+
+    <link rel="stylesheet" href="piirtopeli.css">
+    <script src="piirtopeli.js"></script>
+  </head>
+
+  <body onload="kaikki_valmista()">
+  <audio id="myAudio">
+    <source src="vauvan_nauru.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+    <!--moii-->
+  <button onclick="sinista_painettu()" type="button" name="button" class="sininen"></button>
+  <button onclick="punaista_painettu()" type="button" name="button" class="punainen"></button>
+  <button onclick="keltaista_painettu()" type="button" name="button" class="keltainen"></button>
+  <button onclick="arvontaa_painettu()" type="button" name="button" class="arvonta"></button>
+  <button onclick="sateenkaarta_painettu()" type="button" name="button" class="sateenkaari"></button>
+
+
+  <input type="color" id="varivalitsin" name="varivalitsin"
+           value="#FFFFFF">
+
+  <img onclick="kumia_painettu()" src="https://cdn.pixabay.com/photo/2014/04/03/00/41/eraser-309104_960_720.png" alt="" class="kumi">
+
+
+  <input type="file" id="kuvatiedosto" name="filename">
+  <button onclick="nayta_kuva()">Näytä kuva</button>
+  <img id="kuvan_paikka">
+
+  <br></br>
+  <div class="slidecontainer">
+      <input type="range" min="1" max="100" value="50" class="slider" id="myRange" onmouseup="pauseAudio()" onmousedown="playAudio()">
+  </div>
+  <p>Kynän koko: <span id="kynan_koko">50</span></p>
+
+  </body>
+</html>
